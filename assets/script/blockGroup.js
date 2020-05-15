@@ -1,9 +1,11 @@
+var dataManager = require('dataManager')
 cc.Class({
     extends: cc.Component,
 
     properties: {
         m_imageAtlas: cc.SpriteAtlas,
-        m_score: cc.Label
+        m_score: cc.Label,
+        m_scoreHistory: cc.Label
     },
 
     // LIFE-CYCLE CALLBACKS:
@@ -12,12 +14,14 @@ cc.Class({
         window.g_blockGroup = this;
         this.m_blockMap = new Array();
         this.m_scoreNum = 0;
+        this.dataManager = dataManager();
         this.init();
         this.loadBlockGroup();
     },
 
     start () {
-
+        this.dataManager.load();
+        this.m_scoreHistory.string = '' + this.dataManager.getScore();
     },
 
     init () {
@@ -97,8 +101,7 @@ cc.Class({
                 child.rotation = rotation;
                 this.m_blockMap[this.m_checklist[i].x][this.m_checklist[i].y] = child;
                 this.node.addChild(child);
-                this.m_scoreNum += 1;
-                this.m_score.string = '' + this.m_scoreNum;
+                this.updateScore();
                 this.m_checklist[i] = null;
             }
         }
@@ -176,8 +179,7 @@ cc.Class({
     removeShap (row, col) {
         var node = this.m_blockMap[row][col];
         if (node != null) {
-            this.m_scoreNum += 1;
-            this.m_score.string = '' + this.m_scoreNum;
+            this.updateScore();
             node.removeFromParent();
             this.m_blockMap[row][col] = null;
             node = null;
@@ -226,6 +228,15 @@ cc.Class({
         }
         this.m_score.string = '0';
         this.m_scoreNum = 0;
+    },
+    updateScore () {
+        this.m_scoreNum += 1;
+        this.m_score.string = '' + this.m_scoreNum;
+        var scoreHistoryNum = this.dataManager.getScore();
+        if (this.m_scoreNum > scoreHistoryNum) {
+            this.dataManager.updateScore(this.m_scoreNum);
+            this.m_scoreHistory.string = '' + this.m_scoreNum;
+        }
     }
     // update (dt) {},
 });
