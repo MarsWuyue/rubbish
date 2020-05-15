@@ -161,36 +161,63 @@ cc.Class({
                 cols.push(i);
             }
         }
-
         while (rows.length > 0) {
             var row = rows.pop();
             for (let i = 0; i < 10; i++) {
-                this.removeShap(row, i);
+                var node = this.m_blockMap[row][i];
+                if (node != null) {
+                    var finished = cc.callFunc(function(target, row) {
+                        for (let j = 0; j < 10; j++) {
+                            this.removeShap(row, j);
+                        }
+                    }, this, row);
+                    this.cleanUpAction(node, finished, i, true);
+                }
             }
         }
 
         while (cols.length > 0) {
             var col = cols.pop();
-            for (let i = 0; i < 10; i++) {
-                this.removeShap(i, col);
+            for (let i = 0; i <10; i++) {
+                var node = this.m_blockMap[i][col];
+                if (node != null) {
+                    var finished = cc.callFunc(function(target, col) {
+                        for (let j = 0; j < 10; j++) {
+                            this.removeShap(j, col);
+                        }
+                    }, this, col);
+                    this.cleanUpAction(node, finished, i, false);
+                }
             }
         }
+    },
+
+    cleanUpAction (node, finished, index, isRow) {
+        var time = 0.5;
+        var fadeTo = cc.fadeTo(time - time / 10 * index, 0);
+        var moveTo;
+        var delay;
+        if (isRow) {
+            delay = cc.delayTime(time / 10 * index);
+            moveTo = cc.moveBy(time, cc.v2(0, -200));
+        } else {
+            delay = cc.delayTime(time / 10 * (9 - index));
+            moveTo = cc.moveBy(time, cc.v2(200, 0));
+        }
+        var spawn = cc.sequence(delay, cc.spawn(fadeTo, moveTo));
+        if (index == 0) {
+            spawn = cc.sequence(spawn, finished);
+        }
+        node.runAction(spawn);
     },
 
     removeShap (row, col) {
         var node = this.m_blockMap[row][col];
         if (node != null) {
             this.updateScore();
-            var time = 0.25;
-            var finished = cc.callFunc(function(target, node) {
-                node.removeFromParent();
-                this.m_blockMap[row][col] = null;
-                node = null;
-            }, this, node);
-            var scale1 = cc.scaleTo(time / 2, 1.5);
-            var scale2 = cc.scaleTo(time, 0);
-            var myAction = cc.sequence(scale1, scale2, finished);
-            node.runAction(myAction);
+            node.removeFromParent();
+            this.m_blockMap[row][col] = null;
+            node = null;
         }
     },
 
