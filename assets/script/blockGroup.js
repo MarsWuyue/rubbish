@@ -48,7 +48,7 @@ cc.Class({
                 block.y = -y;
                 block.scale = scale;
                 var sprite = block.addComponent(cc.Sprite);
-                var frame = this.m_imageAtlas.getSpriteFrame('block_1');
+                var frame = this.m_imageAtlas.getSpriteFrame('11');
                 sprite.spriteFrame = frame;
             }
         }
