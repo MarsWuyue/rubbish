@@ -62,7 +62,6 @@ cc.Class({
     },
 
     checkPosition (pos, position) {
-
         pos = this.node.convertToNodeSpaceAR(pos);
 
         if (this.isNotInAvalibleArea(pos, position)) return false;
@@ -182,9 +181,16 @@ cc.Class({
         var node = this.m_blockMap[row][col];
         if (node != null) {
             this.updateScore();
-            node.removeFromParent();
-            this.m_blockMap[row][col] = null;
-            node = null;
+            var time = 0.25;
+            var finished = cc.callFunc(function(target, node) {
+                node.removeFromParent();
+                this.m_blockMap[row][col] = null;
+                node = null;
+            }, this, node);
+            var scale1 = cc.scaleTo(time / 2, 1.5);
+            var scale2 = cc.scaleTo(time, 0);
+            var myAction = cc.sequence(scale1, scale2, finished);
+            node.runAction(myAction);
         }
     },
 

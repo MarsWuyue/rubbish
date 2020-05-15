@@ -21,8 +21,9 @@ cc.Class({
     createShape () {
         for (let i = 0; i < this.node.children.length; i++) {
             var shape = g_shapeBuilder.createShape();
-            shape.node.scale = 0.5;
+            shape.node.scale = 0;
             this.node.children[i].addChild(shape.node);
+            shape.node.runAction(cc.scaleTo(0.3, 0.5));
             this.m_shapes[i] = shape;
         }
     },
@@ -65,7 +66,9 @@ cc.Class({
         this.m_moveShap = new Object();
         this.m_moveShap.position = currentShape.position;
         this.m_moveShap.node = cc.instantiate(currentShape.node);
-        this.m_moveShap.node.setPosition(pos);
+        this.m_moveShap.node.x = pos.x;
+        this.m_moveShap.node.y = pos.y + 100;
+        // this.m_moveShap.node.setPosition(pos);
         this.m_moveShap.node.scale = 1;
         this.node.addChild(this.m_moveShap.node);
         currentShape.node.active = false;
@@ -76,7 +79,8 @@ cc.Class({
 
         var pos = event.getLocation();
         pos = this.node.convertToNodeSpaceAR(pos);
-        this.m_moveShap.node.setPosition(pos);
+        this.m_moveShap.node.x = pos.x;
+        this.m_moveShap.node.y = pos.y + 100;
     },
 
     touchEnd (event) {
