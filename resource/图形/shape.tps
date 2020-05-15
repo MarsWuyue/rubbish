@@ -130,6 +130,10 @@
         <key>dataFileNames</key>
         <map type="GFileNameMap">
             <key>data</key>
+            <struct type="DataFile">
+                <key>name</key>
+                <filename>shape.plist</filename>
+            </struct>
             <key>header</key>
             <key>source</key>
             <struct type="DataFile">
@@ -318,6 +322,21 @@
                 <key>scale9FromFile</key>
                 <false/>
             </struct>
+            <key type="filename">9.png</key>
+            <struct type="IndividualSpriteSettings">
+                <key>pivotPoint</key>
+                <point_f>0.5,0.5</point_f>
+                <key>spriteScale</key>
+                <double>1</double>
+                <key>scale9Enabled</key>
+                <false/>
+                <key>scale9Borders</key>
+                <rect>18,18,35,35</rect>
+                <key>scale9Paddings</key>
+                <rect>18,18,35,35</rect>
+                <key>scale9FromFile</key>
+                <false/>
+            </struct>
         </map>
         <key>fileList</key>
         <array>
@@ -330,6 +349,7 @@
             <filename>6.png</filename>
             <filename>7.png</filename>
             <filename>8.png</filename>
+            <filename>9.png</filename>
         </array>
         <key>ignoreFileList</key>
         <array/>

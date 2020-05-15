@@ -183,6 +183,21 @@
         </struct>
         <key>individualSpriteSettings</key>
         <map type="IndividualSpriteSettingsMap">
+            <key type="filename">../assets/texture/block/block_1.png</key>
+            <struct type="IndividualSpriteSettings">
+                <key>pivotPoint</key>
+                <point_f>0.5,0.5</point_f>
+                <key>spriteScale</key>
+                <double>1</double>
+                <key>scale9Enabled</key>
+                <false/>
+                <key>scale9Borders</key>
+                <rect>17,17,34,34</rect>
+                <key>scale9Paddings</key>
+                <rect>17,17,34,34</rect>
+                <key>scale9FromFile</key>
+                <false/>
+            </struct>
             <key type="filename">../../../学习/合成塔防/texture/block1/11.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
@@ -202,6 +217,7 @@
         <key>fileList</key>
         <array>
             <filename>../../../学习/合成塔防/texture/block1/11.png</filename>
+            <filename>../assets/texture/block/block_1.png</filename>
         </array>
         <key>ignoreFileList</key>
         <array/>

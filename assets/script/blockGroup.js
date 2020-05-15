@@ -34,8 +34,8 @@ cc.Class({
     },
 
     loadBlockGroup () {
-        var scale = (640 / 10) / 106;
-        var weight = 106 * scale;
+        var scale = (640 / 10) / 68;
+        var weight = 68 * scale;
         for (let i = 0; i < 10; i++) {
             var y = i * weight;
             for (let j = 0; j < 10; j++) {
@@ -48,7 +48,7 @@ cc.Class({
                 block.y = -y;
                 block.scale = scale;
                 var sprite = block.addComponent(cc.Sprite);
-                var frame = this.m_imageAtlas.getSpriteFrame('11');
+                var frame = this.m_imageAtlas.getSpriteFrame('block_1');
                 sprite.spriteFrame = frame;
             }
         }
@@ -99,6 +99,8 @@ cc.Class({
                 child.y = -this.m_checklist[i].x * 64 - 32;
                 child.x = this.m_checklist[i].y * 64 + 32;
                 child.rotation = rotation;
+                child.width = 56;
+                child.height = 56;
                 this.m_blockMap[this.m_checklist[i].x][this.m_checklist[i].y] = child;
                 this.node.addChild(child);
                 this.updateScore();

@@ -19,6 +19,21 @@
                 <key>textureRotated</key>
                 <false/>
             </dict>
+            <key>block_1.png</key>
+            <dict>
+                <key>aliases</key>
+                <array/>
+                <key>spriteOffset</key>
+                <string>{0,0}</string>
+                <key>spriteSize</key>
+                <string>{68,68}</string>
+                <key>spriteSourceSize</key>
+                <string>{68,68}</string>
+                <key>textureRect</key>
+                <string>{{106,0},{68,68}}</string>
+                <key>textureRotated</key>
+                <false/>
+            </dict>
         </dict>
         <key>metadata</key>
         <dict>
@@ -31,9 +46,9 @@
             <key>realTextureFileName</key>
             <string>block.png</string>
             <key>size</key>
-            <string>{106,106}</string>
+            <string>{174,106}</string>
             <key>smartupdate</key>
-            <string>$TexturePacker:SmartUpdate:401fce74c918f81421bff25f035132bf:428ffe1627896193392e3f2456ccb322:a971120542bcd3c037bcefa50fb021b3$</string>
+            <string>$TexturePacker:SmartUpdate:cfff7605b3d44c5ce11be1dcb8bc8d58:0bf0b94e47c4de5b6de655b08ff2f911:a971120542bcd3c037bcefa50fb021b3$</string>
             <key>textureFileName</key>
             <string>block.png</string>
         </dict>
