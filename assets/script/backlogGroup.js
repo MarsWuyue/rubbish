@@ -7,7 +7,6 @@ cc.Class({
     onLoad () {
         window.g_backlogGroup = this;
         this.m_shapes = [];
-        this.createShape();
         this.node.on('touchstart', this.touchStart, this);
         this.node.on('touchmove', this.touchMove, this);
         this.node.on('touchend', this.touchEnd, this);
@@ -15,7 +14,7 @@ cc.Class({
     },
 
     start () {
-
+        this.createShape();
     },
 
     createShape () {
@@ -67,7 +66,7 @@ cc.Class({
         this.m_moveShap.position = currentShape.position;
         this.m_moveShap.node = cc.instantiate(currentShape.node);
         this.m_moveShap.node.x = pos.x;
-        this.m_moveShap.node.y = pos.y + 100;
+        this.m_moveShap.node.y = pos.y + this.m_moveShap.position.height / 2 * 64 + 64;
         // this.m_moveShap.node.setPosition(pos);
         this.m_moveShap.node.scale = 1;
         this.node.addChild(this.m_moveShap.node);
@@ -80,7 +79,7 @@ cc.Class({
         var pos = event.getLocation();
         pos = this.node.convertToNodeSpaceAR(pos);
         this.m_moveShap.node.x = pos.x;
-        this.m_moveShap.node.y = pos.y + 100;
+        this.m_moveShap.node.y = pos.y + this.m_moveShap.position.height / 2 * 64 + 64;
     },
 
     touchEnd (event) {

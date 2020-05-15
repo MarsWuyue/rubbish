@@ -193,7 +193,7 @@ cc.Class({
     },
 
     cleanUpAction (node, finished, index, isRow) {
-        var time = 0.5;
+        var time = 0.3;
         var fadeTo = cc.fadeTo(time - time / 10 * index, 0);
         var moveTo;
         var delay;
