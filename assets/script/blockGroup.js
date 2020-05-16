@@ -13,6 +13,7 @@ cc.Class({
     onLoad () {
         window.g_blockGroup = this;
         this.m_blockMap = new Array();
+        this.m_deleteNodes = new Array();
         this.m_scoreNum = 0;
         this.dataManager = dataManager();
         this.init();
@@ -27,8 +28,10 @@ cc.Class({
     init () {
         for (let i = 0; i < 10; i++) {
             this.m_blockMap[i] = new Array();
+            this.m_deleteNodes[i] = new Array();
             for (let j = 0; j < 10; j++) {
                 this.m_blockMap[i][j] = null;
+                this.m_deleteNodes[i][j] = null;
             }
         }
     },
@@ -165,12 +168,15 @@ cc.Class({
             var row = rows.pop();
             for (let i = 0; i < 10; i++) {
                 var node = this.m_blockMap[row][i];
+                this.m_deleteNodes[row][i] = node;
+                this.m_blockMap[row][i] = null;
+                this.updateScore();
                 if (node != null) {
-                    var finished = cc.callFunc(function(target, row) {
+                    var finished = cc.callFunc(function(target, node) {
                         for (let j = 0; j < 10; j++) {
                             this.removeShap(row, j);
                         }
-                    }, this, row);
+                    }, this, node);
                     this.cleanUpAction(node, finished, i, true);
                 }
             }
@@ -180,12 +186,15 @@ cc.Class({
             var col = cols.pop();
             for (let i = 0; i <10; i++) {
                 var node = this.m_blockMap[i][col];
+                this.m_deleteNodes[i][col] = node;
+                this.m_blockMap[i][col] = null;
+                this.updateScore();
                 if (node != null) {
-                    var finished = cc.callFunc(function(target, col) {
+                    var finished = cc.callFunc(function(target, node) {
                         for (let j = 0; j < 10; j++) {
                             this.removeShap(j, col);
                         }
-                    }, this, col);
+                    }, this, node);
                     this.cleanUpAction(node, finished, i, false);
                 }
             }
@@ -212,11 +221,9 @@ cc.Class({
     },
 
     removeShap (row, col) {
-        var node = this.m_blockMap[row][col];
+        var node = this.m_deleteNodes[row][col];
         if (node != null) {
-            this.updateScore();
             node.removeFromParent();
-            this.m_blockMap[row][col] = null;
             node = null;
         }
     },

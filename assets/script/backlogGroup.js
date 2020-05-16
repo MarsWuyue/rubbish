@@ -96,13 +96,11 @@ cc.Class({
         }
 
         if (!this.checkCanContinue()) {
-            cc.log('failed');
             g_failed.show();
         }
     },
 
     checkCanContinue () {
-        var canContinue = true;
         for (let i = 0; i < this.m_shapes.length; i++) {
             if (this.m_shapes[i] == null) continue;
             if (g_blockGroup.canPut(this.m_shapes[i].position.checklist)) return true;
