@@ -38,6 +38,7 @@ cc.Class({
 
     createTypeByProbability () {
         var random = randomNum(0, 100);
+        cc.log(random);
         for (let i = 0; i < this.m_calcProbability.length; i++) {
             if (random <= this.m_calcProbability[i]) {
                 return i;
