@@ -10,7 +10,7 @@ cc.Class({
 
     onLoad () {
         cc.loader.loadRes('lastDance', cc.AudioClip, function (err, clip) {
-            cc.audioEngine.playMusic(clip, true);
+            // cc.audioEngine.playMusic(clip, true);
         });
     },
 

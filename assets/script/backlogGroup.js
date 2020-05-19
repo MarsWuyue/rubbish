@@ -11,6 +11,7 @@ cc.Class({
         this.node.on('touchmove', this.touchMove, this);
         this.node.on('touchend', this.touchEnd, this);
         this.node.on('touchcancel', this.touchCancel, this);
+        cc.macro.ENABLE_MULTI_TOUCH = false;
     },
 
     start () {
