@@ -1,35 +1,55 @@
+var Global = require('global')
+
 cc.Class({
     extends: cc.Component,
 
     properties: {
-        m_playButton: cc.Button,
 
     },
 
     // LIFE-CYCLE CALLBACKS:
 
     onLoad () {
-        cc.loader.loadRes('lastDance', cc.AudioClip, function (err, clip) {
-            // cc.audioEngine.playMusic(clip, true);
-        });
+        cc.loader.loadResDir("prefab/gameUI", function (err, prefabs) {
+            this.loadGameUI(prefabs);
+            this.registerFailedAction();
+            this.registerClearEndAction();
+        }.bind(this));
     },
 
     start () {
     },
+    // update (dt) {},
 
-    playMusic () {
-        if (cc.audioEngine.isMusicPlaying()) {
-            cc.audioEngine.pauseMusic();
-            this.m_playButton.string = '继续播放';
-        } else {
-            cc.audioEngine.resumeMusic();
-            this.m_playButton.string = '暂停播放';
+    loadGameUI (prefabs) {
+        for (let i = 0; i < prefabs.length; i++) {
+            var node = cc.instantiate(prefabs[i]);
+            this.node.addChild(node);
         }
     },
 
-    onDestroy: function () {
-        cc.audioEngine.stop(this.current);
-    }
+    registerFailedAction () {
+        Global.movedArea.registerTouchEndEvent(function (){
+            var hammers = Global.toolArea.getHammers();
+            for (let i = 0; i < hammers.length; i++) {
+                if (hammers[i].value != 0) return;
+            }
 
-    // update (dt) {},
+            var shapes = Global.sourceArea.getShapes();
+            for (let i = 0; i < shapes.length; i++) {
+                if (shapes[i] == null) continue;
+                if (Global.placedArea.canPlaced(shapes[i].data.checklist)) {
+                    return;
+                }
+            }
+            Global.failed.show();
+        });
+    },
+
+    registerClearEndAction () {
+        Global.placedArea.registerClearEndActions(function (rows, cols, oldScore, score){
+            var clearCount = rows.length + cols.length;
+            Global.toolArea.addTool(clearCount, oldScore, score);
+        });
+    }
 });

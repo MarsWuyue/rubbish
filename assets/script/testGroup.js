@@ -1,9 +1,4 @@
-// Learn cc.Class:
-//  - https://docs.cocos.com/creator/manual/en/scripting/class.html
-// Learn Attribute:
-//  - https://docs.cocos.com/creator/manual/en/scripting/reference/attributes.html
-// Learn life-cycle callbacks:
-//  - https://docs.cocos.com/creator/manual/en/scripting/life-cycle-callbacks.html
+var Global = require('global')
 
 cc.Class({
     extends: cc.Component,
@@ -13,10 +8,27 @@ cc.Class({
 
     // LIFE-CYCLE CALLBACKS:
 
-    // onLoad () {},
+    onLoad () {
+        // this.node.on('touchstart', function (event) {
+        //     cc.log(Global.sourceArea.isInside(event.getLocation()));
+        //     var shape = Global.sourceArea.getShape(event.getLocation());
+        //     this.node.addChild(shape.node);
+        // }.bind(this));
+    },
 
     start () {
 
     },
     // update (dt) {},
+
+    onClickCreateShape () {
+        var shape = Global.shapeBuilder.createShape();
+        this.node.addChild(shape.node);
+    },
+    // update (dt) {},
+
+    onClickGetShape () {
+        var shape = Global.sourceArea.getShape();
+        this.node.addChild(shape.node);
+    }
 });

@@ -1,3 +1,5 @@
+var Global = require('global')
+
 cc.Class({
     extends: cc.Component,
 
@@ -5,7 +7,8 @@ cc.Class({
     },
 
     onLoad () {
-        window.g_failed = this;
+        Global.failed = this;
+        this.node.zIndex = 9999;
         this.node.active = false;
     },
 
@@ -15,13 +18,16 @@ cc.Class({
 
     show () {
         this.node.active = true;
+        cc.log('failed');
     },
 
     restart () {
-        g_backlogGroup.destroyAll();
-        g_blockGroup.destroyAll();
+        Global.sourceArea.destroyAll();
+        Global.placedArea.destroyAll();
+        Global.toolArea.destroyAll();
+        Global.top.destroyAll();
+        Global.sourceArea.refreshShapes();
         this.node.active = false;
-        g_backlogGroup.createShape();
     }
 
     // update (dt) {},

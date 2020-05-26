@@ -1,0 +1,990 @@
+{
+    "shapes":[
+        {
+            "probability": 5,
+            "positions":[
+                {
+                    "width": 1,
+                    "height": 1,
+                    "center": {
+                        "x": 0.5,
+                        "y": -0.5
+                    },
+                    "checklist": [
+                        {
+                            "row": 0,
+                            "col": 0
+                        }
+                    ]
+                },
+                {
+                    "width": 1,
+                    "height": 1,
+                    "center": {
+                        "x": 0.5,
+                        "y": -0.5
+                    },
+                    "checklist": [
+                        {
+                            "row": 0,
+                            "col": 0
+                        }
+                    ]
+                },
+                {
+                    "width": 1,
+                    "height": 1,
+                    "center": {
+                        "x": 0.5,
+                        "y": -0.5
+                    },
+                    "checklist": [
+                        {
+                            "row": 0,
+                            "col": 0
+                        }
+                    ]
+                },
+                {
+                    "width": 1,
+                    "height": 1,
+                    "center": {
+                        "x": 0.5,
+                        "y": -0.5
+                    },
+                    "checklist": [
+                        {
+                            "row": 0,
+                            "col": 0
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "probability": 5,
+            "positions":[
+                {
+                    "width": 1,
+                    "height": 2,
+                    "center": {
+                        "x": 0.5,
+                        "y": -1
+                    },
+                    "checklist": [
+                        {
+                            "row": 0,
+                            "col": 0
+                        },
+                        {
+                            "row": 1,
+                            "col": 0
+                        }
+                    ]
+                },
+                {
+                    "width": 2,
+                    "height": 1,
+                    "center": {
+                        "x": 1,
+                        "y": -0.5
+                    },
+                    "checklist": [
+                        {
+                            "row": 0,
+                            "col": 0
+                        },
+                        {
+                            "row": 0,
+                            "col": 1
+                        }
+                    ]
+                },
+                {
+                    "width": 1,
+                    "height": 2,
+                    "center": {
+                        "x": 0.5,
+                        "y": -1
+                    },
+                    "checklist": [
+                        {
+                            "row": 0,
+                            "col": 0
+                        },
+                        {
+                            "row": 1,
+                            "col": 0
+                        }
+                    ]
+                },
+                {
+                    "width": 2,
+                    "height": 1,
+                    "center": {
+                        "x": 1,
+                        "y": -0.5
+                    },
+                    "checklist": [
+                        {
+                            "row": 0,
+                            "col": 0
+                        },
+                        {
+                            "row": 0,
+                            "col": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "probability": 10,
+            "positions":[
+                {
+                    "width": 1,
+                    "height": 3,
+                    "center": {
+                        "x": 0.5,
+                        "y": -1.5
+                    },
+                    "checklist": [
+                        {
+                            "row": 0,
+                            "col": 0
+                        },
+                        {
+                            "row": 1,
+                            "col": 0
+                        },
+                        {
+                            "row": 2,
+                            "col": 0
+                        }
+                    ]
+                },
+                {
+                    "width": 3,
+                    "height": 1,
+                    "center": {
+                        "x": 1.5,
+                        "y": -0.5
+                    },
+                    "checklist": [
+                        {
+                            "row": 0,
+                            "col": 0
+                        },
+                        {
+                            "row": 0,
+                            "col": 1
+                        },
+                        {
+                            "row": 0,
+                            "col": 2
+                        }
+                    ]
+                },
+                {
+                    "width": 1,
+                    "height": 3,
+                    "center": {
+                        "x": 0.5,
+                        "y": -1.5
+                    },
+                    "checklist": [
+                        {
+                            "row": 0,
+                            "col": 0
+                        },
+                        {
+                            "row": 1,
+                            "col": 0
+                        },
+                        {
+                            "row": 2,
+                            "col": 0
+                        }
+                    ]
+                },
+                {
+                    "width": 3,
+                    "height": 1,
+                    "center": {
+                        "x": 1.5,
+                        "y": -0.5
+                    },
+                    "checklist": [
+                        {
+                            "row": 0,
+                            "col": 0
+                        },
+                        {
+                            "row": 0,
+                            "col": 1
+                        },
+                        {
+                            "row": 0,
+                            "col": 2
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "probability": 15,
+            "positions":[
+                {
+                    "width": 1,
+                    "height": 4,
+                    "center": {
+                        "x": 0.5,
+                        "y": -2
+                    },
+                    "checklist": [
+                        {
+                            "row": 0,
+                            "col": 0
+                        },
+                        {
+                            "row": 1,
+                            "col": 0
+                        },
+                        {
+                            "row": 2,
+                            "col": 0
+                        },
+                        {
+                            "row": 3,
+                            "col": 0
+                        }
+                    ]
+                },
+                {
+                    "width": 4,
+                    "height": 1,
+                    "center": {
+                        "x": 2,
+                        "y": -0.5
+                    },
+                    "checklist": [
+                        {
+                            "row": 0,
+                            "col": 0
+                        },
+                        {
+                            "row": 0,
+                            "col": 1
+                        },
+                        {
+                            "row": 0,
+                            "col": 2
+                        },
+                        {
+                            "row": 0,
+                            "col": 3
+                        }
+                    ]
+                },
+                {
+                    "width": 1,
+                    "height": 4,
+                    "center": {
+                        "x": 0.5,
+                        "y": -2
+                    },
+                    "checklist": [
+                        {
+                            "row": 0,
+                            "col": 0
+                        },
+                        {
+                            "row": 1,
+                            "col": 0
+                        },
+                        {
+                            "row": 2,
+                            "col": 0
+                        },
+                        {
+                            "row": 3,
+                            "col": 0
+                        }
+                    ]
+                },
+                {
+                    "width": 4,
+                    "height": 1,
+                    "center": {
+                        "x": 2,
+                        "y": -0.5
+                    },
+                    "checklist": [
+                        {
+                            "row": 0,
+                            "col": 0
+                        },
+                        {
+                            "row": 0,
+                            "col": 1
+                        },
+                        {
+                            "row": 0,
+                            "col": 2
+                        },
+                        {
+                            "row": 0,
+                            "col": 3
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "probability": 15,
+            "positions":[
+                {
+                    "width": 1,
+                    "height": 5,
+                    "center": {
+                        "x": 0.5,
+                        "y": -2.5
+                    },
+                    "checklist": [
+                        {
+                            "row": 0,
+                            "col": 0
+                        },
+                        {
+                            "row": 1,
+                            "col": 0
+                        },
+                        {
+                            "row": 2,
+                            "col": 0
+                        },
+                        {
+                            "row": 3,
+                            "col": 0
+                        },
+                        {
+                            "row": 4,
+                            "col": 0
+                        }
+                    ]
+                },
+                {
+                    "width": 5,
+                    "height": 1,
+                    "center": {
+                        "x": 2.5,
+                        "y": -0.5
+                    },
+                    "checklist": [
+                        {
+                            "row": 0,
+                            "col": 0
+                        },
+                        {
+                            "row": 0,
+                            "col": 1
+                        },
+                        {
+                            "row": 0,
+                            "col": 2
+                        },
+                        {
+                            "row": 0,
+                            "col": 3
+                        },
+                        {
+                            "row": 0,
+                            "col": 4
+                        }
+                    ]
+                },
+                {
+                    "width": 1,
+                    "height": 5,
+                    "center": {
+                        "x": 0.5,
+                        "y": -2.5
+                    },
+                    "checklist": [
+                        {
+                            "row": 0,
+                            "col": 0
+                        },
+                        {
+                            "row": 1,
+                            "col": 0
+                        },
+                        {
+                            "row": 2,
+                            "col": 0
+                        },
+                        {
+                            "row": 3,
+                            "col": 0
+                        },
+                        {
+                            "row": 4,
+                            "col": 0
+                        }
+                    ]
+                },
+                {
+                    "width": 5,
+                    "height": 1,
+                    "center": {
+                        "x": 2.5,
+                        "y": -0.5
+                    },
+                    "checklist": [
+                        {
+                            "row": 0,
+                            "col": 0
+                        },
+                        {
+                            "row": 0,
+                            "col": 1
+                        },
+                        {
+                            "row": 0,
+                            "col": 2
+                        },
+                        {
+                            "row": 0,
+                            "col": 3
+                        },
+                        {
+                            "row": 0,
+                            "col": 4
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "probability": 10,
+            "positions":[
+                {
+                    "width": 2,
+                    "height": 2,
+                    "center": {
+                        "x": 1,
+                        "y": -1
+                    },
+                    "checklist": [
+                        {
+                            "row": 0,
+                            "col": 0
+                        },
+                        {
+                            "row": 1,
+                            "col": 0
+                        },
+                        {
+                            "row": 1,
+                            "col": 1
+                        }
+                    ]
+                },
+                {
+                    "width": 2,
+                    "height": 2,
+                    "center": {
+                        "x": 1,
+                        "y": -1
+                    },
+                    "checklist": [
+                        {
+                            "row": 0,
+                            "col": 1
+                        },
+                        {
+                            "row": 1,
+                            "col": 0
+                        },
+                        {
+                            "row": 1,
+                            "col": 1
+                        }
+                    ]
+                },
+                {
+                    "width": 2,
+                    "height": 2,
+                    "center": {
+                        "x": 1,
+                        "y": -1
+                    },
+                    "checklist": [
+                        {
+                            "row": 0,
+                            "col": 0
+                        },
+                        {
+                            "row": 0,
+                            "col": 1
+                        },
+                        {
+                            "row": 1,
+                            "col": 1
+                        }
+                    ]
+                },
+                {
+                    "width": 2,
+                    "height": 2,
+                    "center": {
+                        "x": 1,
+                        "y": -1
+                    },
+                    "checklist": [
+                        {
+                            "row": 0,
+                            "col": 0
+                        },
+                        {
+                            "row": 0,
+                            "col": 1
+                        },
+                        {
+                            "row": 1,
+                            "col": 0
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "probability": 15,
+            "positions":[
+                {
+                    "width": 2,
+                    "height": 2,
+                    "center": {
+                        "x": 1,
+                        "y": -1
+                    },
+                    "checklist": [
+                        {
+                            "row": 0,
+                            "col": 0
+                        },
+                        {
+                            "row": 0,
+                            "col": 1
+                        },
+                        {
+                            "row": 1,
+                            "col": 0
+                        },
+                        {
+                            "row": 1,
+                            "col": 1
+                        }
+                    ]
+                },
+                {
+                    "width": 2,
+                    "height": 2,
+                    "center": {
+                        "x": 1,
+                        "y": -1
+                    },
+                    "checklist": [
+                        {
+                            "row": 0,
+                            "col": 0
+                        },
+                        {
+                            "row": 0,
+                            "col": 1
+                        },
+                        {
+                            "row": 1,
+                            "col": 0
+                        },
+                        {
+                            "row": 1,
+                            "col": 1
+                        }
+                    ]
+                },
+                {
+                    "width": 2,
+                    "height": 2,
+                    "center": {
+                        "x": 1,
+                        "y": -1
+                    },
+                    "checklist": [
+                        {
+                            "row": 0,
+                            "col": 0
+                        },
+                        {
+                            "row": 0,
+                            "col": 1
+                        },
+                        {
+                            "row": 1,
+                            "col": 0
+                        },
+                        {
+                            "row": 1,
+                            "col": 1
+                        }
+                    ]
+                },
+                {
+                    "width": 2,
+                    "height": 2,
+                    "center": {
+                        "x": 1,
+                        "y": -1
+                    },
+                    "checklist": [
+                        {
+                            "row": 0,
+                            "col": 0
+                        },
+                        {
+                            "row": 0,
+                            "col": 1
+                        },
+                        {
+                            "row": 1,
+                            "col": 0
+                        },
+                        {
+                            "row": 1,
+                            "col": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "probability": 15,
+            "positions":[
+                {
+                    "width": 3,
+                    "height": 3,
+                    "center": {
+                        "x": 1.5,
+                        "y": -1.5
+                    },
+                    "checklist": [
+                        {
+                            "row": 0,
+                            "col": 0
+                        },
+                        {
+                            "row": 1,
+                            "col": 0
+                        },
+                        {
+                            "row": 2,
+                            "col": 0
+                        },
+                        {
+                            "row": 2,
+                            "col": 1
+                        },
+                        {
+                            "row": 2,
+                            "col": 2
+                        }
+                    ]
+                },
+                {
+                    "width": 3,
+                    "height": 3,
+                    "center": {
+                        "x": 1.5,
+                        "y": -1.5
+                    },
+                    "checklist": [
+                        {
+                            "row": 0,
+                            "col": 2
+                        },
+                        {
+                            "row": 1,
+                            "col": 2
+                        },
+                        {
+                            "row": 2,
+                            "col": 0
+                        },
+                        {
+                            "row": 2,
+                            "col": 1
+                        },
+                        {
+                            "row": 2,
+                            "col": 2
+                        }
+                    ]
+                },
+                {
+                    "width": 3,
+                    "height": 3,
+                    "center": {
+                        "x": 1.5,
+                        "y": -1.5
+                    },
+                    "checklist": [
+                        {
+                            "row": 0,
+                            "col": 0
+                        },
+                        {
+                            "row": 0,
+                            "col": 1
+                        },
+                        {
+                            "row": 0,
+                            "col": 2
+                        },
+                        {
+                            "row": 1,
+                            "col": 2
+                        },
+                        {
+                            "row": 2,
+                            "col": 2
+                        }
+                    ]
+                },
+                {
+                    "width": 3,
+                    "height": 3,
+                    "center": {
+                        "x": 1.5,
+                        "y": -1.5
+                    },
+                    "checklist": [
+                        {
+                            "row": 0,
+                            "col": 0
+                        },
+                        {
+                            "row": 0,
+                            "col": 1
+                        },
+                        {
+                            "row": 0,
+                            "col": 2
+                        },
+                        {
+                            "row": 1,
+                            "col": 0
+                        },
+                        {
+                            "row": 2,
+                            "col": 0
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "probability": 10,
+            "positions":[
+                {
+                    "width": 3,
+                    "height": 3,
+                    "center": {
+                        "x": 1.5,
+                        "y": -1.5
+                    },
+                    "checklist": [
+                        {
+                            "row": 0,
+                            "col": 0
+                        },
+                        {
+                            "row": 0,
+                            "col": 1
+                        },
+                        {
+                            "row": 0,
+                            "col": 2
+                        },
+                        {
+                            "row": 1,
+                            "col": 0
+                        },
+                        {
+                            "row": 1,
+                            "col": 1
+                        },
+                        {
+                            "row": 1,
+                            "col": 2
+                        },
+                        {
+                            "row": 2,
+                            "col": 0
+                        },
+                        {
+                            "row": 2,
+                            "col": 1
+                        },
+                        {
+                            "row": 2,
+                            "col": 2
+                        }
+                    ]
+                },
+                {
+                    "width": 3,
+                    "height": 3,
+                    "center": {
+                        "x": 1.5,
+                        "y": -1.5
+                    },
+                    "checklist": [
+                        {
+                            "row": 0,
+                            "col": 0
+                        },
+                        {
+                            "row": 0,
+                            "col": 1
+                        },
+                        {
+                            "row": 0,
+                            "col": 2
+                        },
+                        {
+                            "row": 1,
+                            "col": 0
+                        },
+                        {
+                            "row": 1,
+                            "col": 1
+                        },
+                        {
+                            "row": 1,
+                            "col": 2
+                        },
+                        {
+                            "row": 2,
+                            "col": 0
+                        },
+                        {
+                            "row": 2,
+                            "col": 1
+                        },
+                        {
+                            "row": 2,
+                            "col": 2
+                        }
+                    ]
+                },
+                {
+                    "width": 3,
+                    "height": 3,
+                    "center": {
+                        "x": 1.5,
+                        "y": -1.5
+                    },
+                    "checklist": [
+                        {
+                            "row": 0,
+                            "col": 0
+                        },
+                        {
+                            "row": 0,
+                            "col": 1
+                        },
+                        {
+                            "row": 0,
+                            "col": 2
+                        },
+                        {
+                            "row": 1,
+                            "col": 0
+                        },
+                        {
+                            "row": 1,
+                            "col": 1
+                        },
+                        {
+                            "row": 1,
+                            "col": 2
+                        },
+                        {
+                            "row": 2,
+                            "col": 0
+                        },
+                        {
+                            "row": 2,
+                            "col": 1
+                        },
+                        {
+                            "row": 2,
+                            "col": 2
+                        }
+                    ]
+                },
+                {
+                    "width": 3,
+                    "height": 3,
+                    "center": {
+                        "x": 1.5,
+                        "y": -1.5
+                    },
+                    "checklist": [
+                        {
+                            "row": 0,
+                            "col": 0
+                        },
+                        {
+                            "row": 0,
+                            "col": 1
+                        },
+                        {
+                            "row": 0,
+                            "col": 2
+                        },
+                        {
+                            "row": 1,
+                            "col": 0
+                        },
+                        {
+                            "row": 1,
+                            "col": 1
+                        },
+                        {
+                            "row": 1,
+                            "col": 2
+                        },
+                        {
+                            "row": 2,
+                            "col": 0
+                        },
+                        {
+                            "row": 2,
+                            "col": 1
+                        },
+                        {
+                            "row": 2,
+                            "col": 2
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "rotations": [0, 270, 180, 90],
+    "singleBlockSize" : {
+        "width" : 60,
+        "height" : 60
+    }
+}
