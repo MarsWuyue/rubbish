@@ -115,7 +115,6 @@ cc.Class({
         }
         hammer.sourceIndex = index;
         hammer.data = new Object();
-        // hammer.data.count = this.toolsConfig.length;
         hammer.data.height = 70;
         hammer.data.width = 70;
         hammer.data.type = hammer.type;
@@ -124,10 +123,17 @@ cc.Class({
     },
 
     destroyAll () {
-        for (let i = 0; i < this.tools.length; i++) {
-            this.tools[i].value = 0;
-            this.tools[i].label.string = '0';
-            this.tools[i].hammer.parent.opacity = 150;
+
+        for (let i = 0; i < this.cleanTools.length; i++) {
+            this.cleanTools[i].value = 0;
+            this.cleanTools[i].label.string = '0';
+            this.cleanTools[i].hammer.parent.opacity = 150;
+        }
+
+        for (let i = 0; i < this.scoreTools.length; i++) {
+            this.scoreTools[i].value = 0;
+            this.scoreTools[i].label.string = '0';
+            this.scoreTools[i].hammer.parent.opacity = 150;
         }
     },
 
