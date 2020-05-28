@@ -188,13 +188,16 @@
         <key>individualSpriteSettings</key>
         <map type="IndividualSpriteSettingsMap">
             <key type="filename">AK-YK圆圈_fill.png</key>
+            <key type="filename">奖杯.png</key>
             <key type="filename">工具-锤子.png</key>
             <key type="filename">星星.png</key>
             <key type="filename">炸弹.png</key>
             <key type="filename">爆炸.png</key>
             <key type="filename">相框.png</key>
             <key type="filename">设置.png</key>
+            <key type="filename">返回 (1).png</key>
             <key type="filename">闪电.png</key>
+            <key type="filename">黑板2.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
                 <point_f>0.5,0.5</point_f>
@@ -224,6 +227,21 @@
                 <key>scale9FromFile</key>
                 <false/>
             </struct>
+            <key type="filename">按钮.png</key>
+            <struct type="IndividualSpriteSettings">
+                <key>pivotPoint</key>
+                <point_f>0.5,0.5</point_f>
+                <key>spriteScale</key>
+                <double>1</double>
+                <key>scale9Enabled</key>
+                <false/>
+                <key>scale9Borders</key>
+                <rect>58,25,116,50</rect>
+                <key>scale9Paddings</key>
+                <rect>58,25,116,50</rect>
+                <key>scale9FromFile</key>
+                <false/>
+            </struct>
         </map>
         <key>fileList</key>
         <array>
@@ -236,6 +254,10 @@
             <filename>爆炸.png</filename>
             <filename>闪电.png</filename>
             <filename>AK-YK圆圈_fill.png</filename>
+            <filename>黑板2.png</filename>
+            <filename>奖杯.png</filename>
+            <filename>按钮.png</filename>
+            <filename>返回 (1).png</filename>
         </array>
         <key>ignoreFileList</key>
         <array/>

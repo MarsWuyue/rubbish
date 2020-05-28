@@ -6,5 +6,6 @@ module.exports = {
     movedArea: null,
     top: null,
     toolArea: null,
-    failed: null
+    failed: null,
+    setting: null
 };

@@ -30,86 +30,11 @@
                 <key>spriteSourceSize</key>
                 <string>{200,200}</string>
                 <key>textureRect</key>
-                <string>{{0,400},{200,200}}</string>
+                <string>{{0,100},{200,200}}</string>
                 <key>textureRotated</key>
                 <false/>
             </dict>
-            <key>工具-锤子.png</key>
-            <dict>
-                <key>aliases</key>
-                <array/>
-                <key>spriteOffset</key>
-                <string>{0,0}</string>
-                <key>spriteSize</key>
-                <string>{100,100}</string>
-                <key>spriteSourceSize</key>
-                <string>{100,100}</string>
-                <key>textureRect</key>
-                <string>{{100,0},{100,100}}</string>
-                <key>textureRotated</key>
-                <false/>
-            </dict>
-            <key>星星.png</key>
-            <dict>
-                <key>aliases</key>
-                <array/>
-                <key>spriteOffset</key>
-                <string>{0,0}</string>
-                <key>spriteSize</key>
-                <string>{100,100}</string>
-                <key>spriteSourceSize</key>
-                <string>{100,100}</string>
-                <key>textureRect</key>
-                <string>{{0,100},{100,100}}</string>
-                <key>textureRotated</key>
-                <false/>
-            </dict>
-            <key>炸弹.png</key>
-            <dict>
-                <key>aliases</key>
-                <array/>
-                <key>spriteOffset</key>
-                <string>{0,0}</string>
-                <key>spriteSize</key>
-                <string>{100,100}</string>
-                <key>spriteSourceSize</key>
-                <string>{100,100}</string>
-                <key>textureRect</key>
-                <string>{{100,100},{100,100}}</string>
-                <key>textureRotated</key>
-                <false/>
-            </dict>
-            <key>爆炸.png</key>
-            <dict>
-                <key>aliases</key>
-                <array/>
-                <key>spriteOffset</key>
-                <string>{0,0}</string>
-                <key>spriteSize</key>
-                <string>{100,100}</string>
-                <key>spriteSourceSize</key>
-                <string>{100,100}</string>
-                <key>textureRect</key>
-                <string>{{0,200},{100,100}}</string>
-                <key>textureRotated</key>
-                <false/>
-            </dict>
-            <key>相框.png</key>
-            <dict>
-                <key>aliases</key>
-                <array/>
-                <key>spriteOffset</key>
-                <string>{0,0}</string>
-                <key>spriteSize</key>
-                <string>{100,100}</string>
-                <key>spriteSourceSize</key>
-                <string>{100,100}</string>
-                <key>textureRect</key>
-                <string>{{100,200},{100,100}}</string>
-                <key>textureRotated</key>
-                <false/>
-            </dict>
-            <key>设置.png</key>
+            <key>奖杯.png</key>
             <dict>
                 <key>aliases</key>
                 <array/>
@@ -124,7 +49,7 @@
                 <key>textureRotated</key>
                 <false/>
             </dict>
-            <key>闪电.png</key>
+            <key>工具-锤子.png</key>
             <dict>
                 <key>aliases</key>
                 <array/>
@@ -136,6 +61,141 @@
                 <string>{100,100}</string>
                 <key>textureRect</key>
                 <string>{{100,300},{100,100}}</string>
+                <key>textureRotated</key>
+                <false/>
+            </dict>
+            <key>按钮.png</key>
+            <dict>
+                <key>aliases</key>
+                <array/>
+                <key>spriteOffset</key>
+                <string>{0,0}</string>
+                <key>spriteSize</key>
+                <string>{232,100}</string>
+                <key>spriteSourceSize</key>
+                <string>{232,100}</string>
+                <key>textureRect</key>
+                <string>{{0,400},{232,100}}</string>
+                <key>textureRotated</key>
+                <false/>
+            </dict>
+            <key>星星.png</key>
+            <dict>
+                <key>aliases</key>
+                <array/>
+                <key>spriteOffset</key>
+                <string>{0,0}</string>
+                <key>spriteSize</key>
+                <string>{100,100}</string>
+                <key>spriteSourceSize</key>
+                <string>{100,100}</string>
+                <key>textureRect</key>
+                <string>{{0,500},{100,100}}</string>
+                <key>textureRotated</key>
+                <false/>
+            </dict>
+            <key>炸弹.png</key>
+            <dict>
+                <key>aliases</key>
+                <array/>
+                <key>spriteOffset</key>
+                <string>{0,0}</string>
+                <key>spriteSize</key>
+                <string>{100,100}</string>
+                <key>spriteSourceSize</key>
+                <string>{100,100}</string>
+                <key>textureRect</key>
+                <string>{{100,500},{100,100}}</string>
+                <key>textureRotated</key>
+                <false/>
+            </dict>
+            <key>爆炸.png</key>
+            <dict>
+                <key>aliases</key>
+                <array/>
+                <key>spriteOffset</key>
+                <string>{0,0}</string>
+                <key>spriteSize</key>
+                <string>{100,100}</string>
+                <key>spriteSourceSize</key>
+                <string>{100,100}</string>
+                <key>textureRect</key>
+                <string>{{0,600},{100,100}}</string>
+                <key>textureRotated</key>
+                <false/>
+            </dict>
+            <key>相框.png</key>
+            <dict>
+                <key>aliases</key>
+                <array/>
+                <key>spriteOffset</key>
+                <string>{0,0}</string>
+                <key>spriteSize</key>
+                <string>{100,100}</string>
+                <key>spriteSourceSize</key>
+                <string>{100,100}</string>
+                <key>textureRect</key>
+                <string>{{100,600},{100,100}}</string>
+                <key>textureRotated</key>
+                <false/>
+            </dict>
+            <key>设置.png</key>
+            <dict>
+                <key>aliases</key>
+                <array/>
+                <key>spriteOffset</key>
+                <string>{0,0}</string>
+                <key>spriteSize</key>
+                <string>{100,100}</string>
+                <key>spriteSourceSize</key>
+                <string>{100,100}</string>
+                <key>textureRect</key>
+                <string>{{0,700},{100,100}}</string>
+                <key>textureRotated</key>
+                <false/>
+            </dict>
+            <key>返回 (1).png</key>
+            <dict>
+                <key>aliases</key>
+                <array/>
+                <key>spriteOffset</key>
+                <string>{0,0}</string>
+                <key>spriteSize</key>
+                <string>{100,100}</string>
+                <key>spriteSourceSize</key>
+                <string>{100,100}</string>
+                <key>textureRect</key>
+                <string>{{100,700},{100,100}}</string>
+                <key>textureRotated</key>
+                <false/>
+            </dict>
+            <key>闪电.png</key>
+            <dict>
+                <key>aliases</key>
+                <array/>
+                <key>spriteOffset</key>
+                <string>{0,0}</string>
+                <key>spriteSize</key>
+                <string>{100,100}</string>
+                <key>spriteSourceSize</key>
+                <string>{100,100}</string>
+                <key>textureRect</key>
+                <string>{{0,800},{100,100}}</string>
+                <key>textureRotated</key>
+                <false/>
+            </dict>
+            <key>黑板2.png</key>
+            <dict>
+                <key>aliases</key>
+                <array/>
+                <key>spriteOffset</key>
+                <string>{0,0}</string>
+                <key>spriteSize</key>
+                <string>{100,100}</string>
+                <key>spriteSourceSize</key>
+                <string>{100,100}</string>
+                <key>textureRect</key>
+                <string>{{100,800},{100,100}}</string>
                 <key>textureRotated</key>
                 <false/>
             </dict>
@@ -151,9 +211,9 @@
             <key>realTextureFileName</key>
             <string>imgs.png</string>
             <key>size</key>
-            <string>{200,600}</string>
+            <string>{232,900}</string>
             <key>smartupdate</key>
-            <string>$TexturePacker:SmartUpdate:80a82748c0784966befec5e5b7a99e50:7780d7b5089271518c7f401f56b7b536:4762cb4d2352d4e1cde0ed1bbaf62a9f$</string>
+            <string>$TexturePacker:SmartUpdate:463e51f2283a2f05d3b2626b007ba22f:96ec68e63cddc30e4888a7385483d7b2:4762cb4d2352d4e1cde0ed1bbaf62a9f$</string>
             <key>textureFileName</key>
             <string>imgs.png</string>
         </dict>

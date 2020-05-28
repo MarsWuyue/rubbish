@@ -48,7 +48,7 @@ cc.Class({
     },
 
     showSettingModel () {
-        Global.failed.show();
+        Global.setting.show();
     },
 
     getScore () {

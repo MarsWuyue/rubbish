@@ -208,10 +208,10 @@ cc.Class({
         var clearRows = new Array();
         var clearCols = new Array();
         for (let i = 0; i < rows.length; i++) {
-            if (this.isRowFull(rows[i]) && !array_contain(clearRows, rows[i])) {
+            if (this.isRowFull(rows[i]) && !this.array_contain(clearRows, rows[i])) {
                 clearRows.push(rows[i])
             }
-            if (this.isColFull(cols[i]) && !array_contain(clearCols, cols[i])) {
+            if (this.isColFull(cols[i]) && !this.array_contain(clearCols, cols[i])) {
                 clearCols.push(cols[i])
             }
         }
@@ -371,7 +371,7 @@ cc.Class({
     },
 
     cleanLine (row, col) {
-        var hOrv = randomNum(0, 1);
+        var hOrv = this.randomNum(0, 1);
         if (hOrv == 0) {
             this.clearRow (row);
         } else {
@@ -383,4 +383,18 @@ cc.Class({
         this.clearRow (row);
         this.clearCol (col);
     },
+
+    randomNum(min, max) {
+        return Math.floor(Math.random() * (max - min + 1) + min);
+    },
+
+    array_contain (arr, obj) {
+        var i = arr.length;
+        while (i--) {
+            if (arr[i] == obj) {
+                return true;
+            }
+        }
+        return false;
+    }
 });

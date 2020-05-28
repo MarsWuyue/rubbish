@@ -33,7 +33,7 @@ cc.Class({
 
     createShape () {
         var type = this.createTypeByProbability();
-        var rotation = randomNum(0, this.rotations.length - 1);
+        var rotation = this.randomNum(0, this.rotations.length - 1);
         var shape = new Object();
         shape.data = this.shapesData[type].positions[rotation];
         shape.node = this.createNode(type, rotation, shape.data);
@@ -48,13 +48,17 @@ cc.Class({
     },
 
     createTypeByProbability () {
-        var random = randomNum(0, this.maxProbability);
+        var random = this.randomNum(0, this.maxProbability);
         for (let i = 0; i < this.calcProbability.length; i++) {
             if (random <= this.calcProbability[i]) {
                 return i;
             }
         }
         return 0;
+    },
+
+    randomNum(min, max) {
+        return Math.floor(Math.random() * (max - min + 1) + min);
     }
 
     // update (dt) {},
