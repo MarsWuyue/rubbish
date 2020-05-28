@@ -4,6 +4,7 @@ cc.Class({
     extends: cc.Component,
 
     properties: {
+        score: cc.Label
     },
 
     onLoad () {
@@ -17,6 +18,7 @@ cc.Class({
     },
 
     show () {
+        this.score.string = Global.top.getScore() + '';
         this.node.active = true;
         cc.log('failed');
     },
@@ -28,6 +30,10 @@ cc.Class({
         Global.top.destroyAll();
         Global.sourceArea.refreshShapes();
         this.node.active = false;
+    },
+
+    returnToWelcome () {
+        cc.director.loadScene("welcome");
     }
 
     // update (dt) {},

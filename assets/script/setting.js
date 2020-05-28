@@ -30,8 +30,8 @@ cc.Class({
         this.node.active = false;
     },
 
-    returnToWelcome () {
-        cc.director.loadScene("welcome");
+    hide () {
+        this.node.active = false;
     }
 
     // update (dt) {},

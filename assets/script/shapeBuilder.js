@@ -32,7 +32,7 @@ cc.Class({
     },
 
     createShape () {
-        var type = this.createTypeByProbability();
+        var type = 8; //this.createTypeByProbability();
         var rotation = this.randomNum(0, this.rotations.length - 1);
         var shape = new Object();
         shape.data = this.shapesData[type].positions[rotation];
