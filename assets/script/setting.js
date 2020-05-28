@@ -28,6 +28,10 @@ cc.Class({
         Global.top.destroyAll();
         Global.sourceArea.refreshShapes();
         this.node.active = false;
+    },
+
+    returnToWelcome () {
+        cc.director.loadScene("welcome");
     }
 
     // update (dt) {},
