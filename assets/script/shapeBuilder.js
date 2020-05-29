@@ -4,6 +4,7 @@ cc.Class({
     extends: cc.Component,
 
     properties: {
+        spriteFrames: cc.SpriteAtlas,
         shapePool: [cc.Prefab]
     },
 
@@ -32,17 +33,24 @@ cc.Class({
     },
 
     createShape () {
-        var type = 8; //this.createTypeByProbability();
+        var type = this.createTypeByProbability();
         var rotation = this.randomNum(0, this.rotations.length - 1);
         var shape = new Object();
         shape.data = this.shapesData[type].positions[rotation];
-        shape.node = this.createNode(type, rotation, shape.data);
+
+        var spriteFrame = this.spriteFrames.getSpriteFrame(this.randomNum(0, 8) + '');
+        shape.data.spriteFrame = spriteFrame;
+        shape.node = this.createNode(type, rotation, spriteFrame);
         return shape;
     },
 
-    createNode (type, rotation) {
+    createNode (type, rotation, spriteFrame) {
         var node = cc.instantiate(this.shapePool[type]);
         node.rotation = this.rotations[rotation];
+        for (let i = 0; i < node.children.length; i++) {
+            node.children[i].rotation = -node.rotation;
+            node.children[i].getComponent(cc.Sprite).spriteFrame = spriteFrame;
+        }
         node.active = true;
         return node;
     },

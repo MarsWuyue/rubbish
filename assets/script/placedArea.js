@@ -85,7 +85,7 @@ cc.Class({
 
         if (!this.validateSpace(placedPosition)) return false;
 
-        this.placeElement(placedPosition);
+        this.placeElement(placedPosition, data.spriteFrame);
 
         this.clearFulled(placedPosition);
 
@@ -157,11 +157,13 @@ cc.Class({
         return true;
     },
 
-    placeElement (placedPosition) {
+    placeElement (placedPosition, spriteFrame) {
         var rows = placedPosition.rows;
         var cols = placedPosition.cols;
         for (let i = 0; i < rows.length; i++) {
-            this.placedMap[rows[i]][cols[i]].children[0].active = true;
+            var child = this.placedMap[rows[i]][cols[i]].children[0];
+            child.getComponent(cc.Sprite).spriteFrame = spriteFrame;
+            child.active = true;
             Global.top.addScore(1);
         }
     },
